@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE personajes [
-<!ELEMENT personaje* (#PCDATA)>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT nacionalidad (#PCDATA)>
-<!ELEMENT altura (#PCDATA)>
-<!ELEMENT peso (#PCDATA)>
-<!ELEMENT grupo_sanguineo (#PCDATA)>
-<!ELEMENT datos_personales (#PCDATA)>
-<!ELEMENT aficion (#PCDATA)>
-<!ELEMENT aversion (#PCDATA)>
+	<!ELEMENT personaje+ (#PCDATA)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT nacionalidad? (#PCDATA)>
+	<!ELEMENT altura (#PCDATA)>
+	<!ELEMENT peso? (#PCDATA)>
+	<!ELEMENT grupo_sanguineo? (#PCDATA)>
+	<!ELEMENT datos_personales? (#PCDATA)>
+	<!ELEMENT aficion* (#PCDATA)>
+	<!ELEMENT aversion* (#PCDATA)>
 ]>
 <personajes>
 	<personaje>
