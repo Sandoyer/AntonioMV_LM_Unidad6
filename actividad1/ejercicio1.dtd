@@ -1,0 +1,5 @@
+<!ELEMENT mensaje1 (remitente, destinatario, asunto, contenido)>
+<!ELEMENT remitente (#PCDATA)>
+<!ELEMENT destinatario (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>

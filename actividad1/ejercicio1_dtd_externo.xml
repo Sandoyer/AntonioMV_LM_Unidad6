@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensaje1 SYSTEM "ejercicio1.dtd" >
+<mensaje1>
+  <remitente>fulanico@gmail.com</remitente>
+  <destinatario>menganico@gmail.com</destinatario>
+  <asunto>Bar de Paco</asunto>
+  <contenido>Quedamos a las 4 pa un cafe o que???</contenido>
+</mensaje1>
