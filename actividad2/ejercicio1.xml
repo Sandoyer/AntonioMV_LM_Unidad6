@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE discos [
+    <!ELEMENT discos (disco+)>
+    <!ELEMENT disco (artista?, album?)>
+    <!ELEMENT artista (#PCDATA)>
+    <!ELEMENT album (#PCDATA)>
+]>
+<discos>
+    <disco>
+        <artista>Dover</artista>
+        <album>Devil Came To Me</album>
+    </disco>
+    <disco>
+        <artista>Extremoduro</artista>
+        <album>Ley Innata</album>
+    </disco>
+    <disco>
+        <artista>Bob Marley</artista>
+        <album>Exodus</album>
+    </disco>
+</discos>
