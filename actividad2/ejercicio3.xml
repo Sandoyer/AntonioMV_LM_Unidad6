@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE personajes [
-	<!ELEMENT personaje+ (#PCDATA)>
+	<!ELEMENT personajes (personaje*)>
+	<!ELEMENT personaje (nombre, nacionalidad?, altura, peso?, grupo_sanguineo?, datos_personales*)>
 	<!ELEMENT nombre (#PCDATA)>
-	<!ELEMENT nacionalidad? (#PCDATA)>
+	<!ELEMENT nacionalidad (#PCDATA)>
 	<!ELEMENT altura (#PCDATA)>
-	<!ELEMENT peso? (#PCDATA)>
-	<!ELEMENT grupo_sanguineo? (#PCDATA)>
-	<!ELEMENT datos_personales? (#PCDATA)>
-	<!ELEMENT aficion* (#PCDATA)>
-	<!ELEMENT aversion* (#PCDATA)>
+	<!ELEMENT peso (#PCDATA)>
+	<!ELEMENT grupo_sanguineo (#PCDATA)>
+	<!ELEMENT datos_personales (aficion*, aversion*)>
+	<!ELEMENT aficion (#PCDATA)>
+	<!ELEMENT aversion (#PCDATA)>
 ]>
 <personajes>
 	<personaje>
@@ -26,8 +27,10 @@
 	</personaje>
 	<personaje>
 		<nombre>M. Bison</nombre>
+		<nacionalidad/>
 		<altura>180</altura>
 		<peso>80</peso>
+		<grupo_sanguineo></grupo_sanguineo>
 		<datos_personales>
 			<aficion>dominar el mundo</aficion>
 			<aversion>la música pop</aversion>
@@ -38,6 +41,7 @@
 		<nombre>Chun-Li</nombre>
 		<nacionalidad>China</nacionalidad>
 		<altura>173</altura>
+		<peso/>
 		<grupo_sanguineo>A</grupo_sanguineo>
 		<datos_personales>
 			<aficion>Su padre</aficion>
@@ -51,5 +55,6 @@
 		<altura>176</altura>
 		<peso>70</peso>
 		<grupo_sanguineo>O</grupo_sanguineo>
+		<datos_personales/>
 	</personaje>
 </personajes>
