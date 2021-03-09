@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados [
+<!ELEMENT empleados (empleado*)>
+<!ATTLIST empleados total CDATA #REQUIRED>
+<!ELEMENT empleado (nombre, apellidos, seccion)>
+<!ATTLIST empleado id ID #REQUIRED>
+<!ATTLIST empleado seccion (desarrollo | sistemas) "sistemas">
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT seccion (#PCDATA)>
+]>
+<empleados total="2">
+    <empleado id="Joaquin">
+        <nombre>Joaquin</nombre>
+        <apellidos>Martinez Rodriguez</apellidos>
+        <seccion>desarrollo</seccion>
+    </empleado>
+        <empleado id="Pepe">
+        <nombre>Pepe</nombre>
+        <apellidos>Perez Rosado</apellidos>
+        <seccion>desarrollo</seccion>
+    </empleado>
+</empleados>
